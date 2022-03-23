@@ -10,11 +10,11 @@
     <body>
         <div class="main">
             <div class="header">
-                <h1 id="title">ViperVision Release Notes</h1></div><div id=4.8.14.20><div class="align"><i id="i35" class="fa fa-minus" onclick="makeLittle('collapse-35', 'i35')" aria-hidden="true"></i><h2>ViperVision4.8.14.20</h2></div><ul id="collapse-35" class="active" style="display: block;"> <h3>Testing API/script</h3></ul></div></div>
+                <h1 id="title">ViperVision Release Notes</h1></div><div id=4.9.15.21><div class="align"><i id="i36" class="fa fa-minus" onclick="makeLittle('collapse-36', 'i36')" aria-hidden="true"></i><h2>ViperVision4.9.15.21</h2></div><ul id="collapse-36" class="active" style="display: block;"> <h3>Automation Technology Camera</h3><li>You can now add and use an Automation Technology camera in ViperVision.</li><h3></h3><h3>Updated Atlas SDK</h3><li>Updated the Flir SDK to the newest version.</li><h3></h3><h3>Snapshot & Video Feature For More Cameras</h3><li>Can now take snapshots and video recordings for AST TE700 and ICI SWIR.</li><h3></h3><h3>AX8 & TE700 In Web Server</h3><li>The video feeds for these two cameras are now displayed in the web server.</li><h3></h3><h3>Restart & System Tray Log Entries</h3><li>When the user restarts the software or clicks to minimize it to the System Tray, a log entry will be made.</li><h3></h3><h3>Toggling IO Data When Logged Out</h3><li>Made it so IO data could not be "toggled" from the IO content windows if the user is logged out.</li><h3></h3><h3>IO Content Window Double-Click</h3><li>When logged in and with the appropriate permissions, a user can double click any IO content grid to open that device's settings.</li><h3></h3><h3>Enter Key When Adding A Camera</h3><h3>When you add a camera, when giving it a name, you can press the enter key to emulate clicking the Okay button. </h3><h3></h3><h3>Updated manual</h3><li>A revised manual is included in this version.</li><h3></h3><h3>(Bug) New Scanner Classes</h3><li>Switched over to using the new Flir Scanner classes to prevent the access violation bug that can kill the software.</li><h3></h3><h3>(Bug) Camera Disconnected Image & Outputs</h3><li>Made it so the Camera Offline image should always appear if starting the software without the camera connected. Also fixed the various inconsistencies with the camera connection state output process. If camera is connected, the output should be true, otherwise false.</li><h3></h3><h3>(Bug) IO Content UI Updating</h3><li>Fixed the issues that sometimes prevent the IO content UI from updating. For example, an output channel going true but still saying false in the UI. Also, fixed the "red x" issue that sometimes displays in the control (mostly seen when using Adams modules).</li><h3></h3><h3>(Bug) Dock Panel Error Checking</h3><li>Now checking if an error occurs when loading the dock panel config, if so, reset the layout to default.</li><h3></h3><h3>(Bug) Temperature & Emissivity Correction</h3><li>This feature was messed up when moving to 4.0. Fixed that.</li><h3></h3><h3>(Bug) System Tray Icons</h3><li>Fixed the bug that would cause a new "V" icon to appear in the system tray every time the user restarted the software. Also, we are now removing the "V" if the user makes the software full screen again.</li><h3></h3><h3>(Bug) Ellipse & Spot Labels</h3><li>Fixed the bug where the ellipse and spot labels were either hard or impossible to move.</li></ul></div></div><div id=4.8.14.20><div class="align"><i id="i35" class="fa fa-plus" onclick="makeLittle('collapse-35', 'i35')" aria-hidden="true"></i><h2>ViperVision4.8.14.20</h2></div><ul id="collapse-35" class="inactive" > <h3>Testing API/script</h3></ul></div></div>
         <div class="content">
 		<div id="4.7.13.19">
 			<div class="align"><i id="i34" class="fa fa-plus" onclick="makeLittle('collapse-34', 'i34')" aria-hidden="true"></i><h2>ViperVision4.7.13.19</h2></div>
-			<ul id="collapse-34" class="active" >
+			<ul id="collapse-34" class="inactive" >
 				<h3>Report Template Update</h3>
 				<li>The default report templates have been updated. This update adds detail to make the reports look nicer. Also, the "detailed" Excel report was divided into 2 separate templates, one with database table and another with database table and pixel data.</li>
 
@@ -72,7 +72,7 @@
 		</div>
 		<div id="4.6.11.18">
 			<div class="align"><i id="i33" class="fa fa-plus" onclick="makeLittle('collapse-33', 'i33')" aria-hidden="true"></i><h2>ViperVision4.6.11.18</h2></div>
-			<ul id="collapse-33" class="inactive">
+			<ul id="collapse-33" class="ininactive">
 				<h3>New Notification Control</h3>
 				<li>Replaced the notification control with one that resembles the Windows Toast notifications.</li>
 
@@ -124,7 +124,7 @@
 		</div>
 		<div id="4.6.11.17">
 			<div class="align"><i id="i32" class="fa fa-plus" onclick="makeLittle('collapse-32', 'i32')" aria-hidden="true"></i><h2>ViperVision4.6.11.17</h2></div>
-			<ul id="collapse-32" class="inactive">
+			<ul id="collapse-32" class="ininactive">
 				<h3>CSQ File Support</h3>
 				<li>Can now open .csq files in ViperViewer.</li>
 				<h3>(Bug) Viewer File Loading</h3>
@@ -137,7 +137,7 @@
 		</div>
 		<div id="4.6.10.16">
 			<div class="align"><i id="i31" class="fa fa-plus" onclick="makeLittle('collapse-31', 'i31')" aria-hidden="true"></i><h2>ViperVision4.6.10.16</h2></div>
-			<ul id="collapse-31" class="inactive">
+			<ul id="collapse-31" class="ininactive">
 				<h3>Gauges</h3>
 				<li>A new feature to help users visualize data easier. The user can create a unique gauge for each ROI data point they want to monitor. They can select thresholds and colors so the operators can quickly see how close an ROI is to alarming. This feature is unlocked with the Max license.</li>
 
@@ -162,7 +162,7 @@
 		</div>
 		<div id="4.5.9.15">
 			<div class="align"><i id="i30" class="fa fa-plus" onclick="makeLittle('collapse-30', 'i30')" aria-hidden="true"></i><h2>ViperVision4.5.9.15</h2></div>
-			<ul id="collapse-30" class="inactive">
+			<ul id="collapse-30" class="ininactive">
 				<h3>Finished New Camera Discovery</h3>
 				<li>Optimized the use of the new Flir Scanner classes. Now adding and deleting cameras is more stable. Also, updating the available cameras list more accurately.</li>
 
@@ -175,7 +175,7 @@
 		</div>
 	    <div id="4.5.9.14">
                 <div class="align"><i id="i29" class="fa fa-plus" onclick="makeLittle('collapse-29', 'i29')" aria-hidden="true"></i><h2>ViperVision4.5.9.14</h2></div>
-                <ul id="collapse-29" class="inactive">
+                <ul id="collapse-29" class="ininactive">
 			<h3>(Bug) Flir GigE Vision Exclusive Lock</h3>
 			<li>
 			    Some recent code was resulting in CameraDeviceInfo to be created for a single camera multiple times. This causes an exclusive lock error to fire 
@@ -185,7 +185,7 @@
             </div>
 		<div id="4.5.9.13">
                 <div class="align"><i id="i28" class="fa fa-plus" onclick="makeLittle('collapse-28', 'i28')" aria-hidden="true"></i><h2>ViperVision4.5.9.13</h2></div>
-                <ul id="collapse-28" class="inactive">
+                <ul id="collapse-28" class="ininactive">
 		    <h3>Automation Technology Camera</h3>
 		    <li>You can now add and use an Automation Technology camera in ViperVision.</li>
 
@@ -237,7 +237,7 @@
             	</div>
 		<div id="4.4.8.12">
                 <div class="align"><i id="i27" class="fa fa-plus" onclick="makeLittle('collapse-27', 'i27')" aria-hidden="true"></i><h2>ViperVision4.4.8.12</h2></div>
-                <ul id="collapse-27" class="inactive">
+                <ul id="collapse-27" class="ininactive">
                     <h3>Web Server Runas Admin</h3>
                     <li>No longer need to run as admin to get the web server working.</li>
 			
@@ -260,7 +260,7 @@
             </div>
             <div id="4.4.8.11">
                 <div class="align"><i id="i26" class="fa fa-plus" onclick="makeLittle('collapse-26', 'i26')" aria-hidden="true"></i><h2>ViperVision4.4.8.11</h2></div>
-                <ul id="collapse-26" class="inactive">
+                <ul id="collapse-26" class="ininactive">
                     <h3>Flir Atlas SDK Update</h3>
                     <li>Added in the newest SDK from Flir. This includes a fix to get the A310 cameras working again.</li>
         
@@ -273,12 +273,12 @@
             </div>
 	    <div id="4.4.8.10">
                 <div class="align"><i id="i25" class="fa fa-plus" onclick="makeLittle('collapse-25', 'i25')" aria-hidden="true"></i><h2>ViperVision4.4.8.10</h2></div>
-                <ul id="collapse-25" class="inactive">
+                <ul id="collapse-25" class="ininactive">
 	 	    <h3>V1 LED For Standard Alarms</h3>
-                    <li>For the V1 kiosk when not in EBT mode, the software will show a green light when no alarms are active and a red light when there are any alarms.</li>
+                    <li>For the V1 kiosk when not in EBT mode, the software will show a green light when no alarms are inactive and a red light when there are any alarms.</li>
 			
                     <h3>Acknowledge Alarms</h3>
-                    <li>Now the user has the option to silence all alarms for an ROI for a certain amount of time. They can also elect to cancel all processes during this time. The menu can be opened from the ROI Summary pane when the alarm becomes active. Additional work will be required to make this specific to individual analyses.</li>
+                    <li>Now the user has the option to silence all alarms for an ROI for a certain amount of time. They can also elect to cancel all processes during this time. The menu can be opened from the ROI Summary pane when the alarm becomes inactive. Additional work will be required to make this specific to individual analyses.</li>
         
                     <h3>ICI SWIR Integration</h3>
                     <li>It is now possible to connect the ICI SWIR camera in ViperVision.</li>
@@ -304,7 +304,7 @@
             </div>
 	    <div id="4.3.7.9">
                 <div class="align"><i id="i24" class="fa fa-plus" onclick="makeLittle('collapse-24', 'i24')" aria-hidden="true"></i><h2>ViperVision4.3.7.9</h2></div>
-                <ul id="collapse-24" class="inactive">
+                <ul id="collapse-24" class="ininactive">
                     <h3>Charting Improvements</h3>
                     <li>Now using a different control for charting data to prevent freezing and reduce system resources usage. The user now also has the ability to choose the data series color.</li>
         
@@ -320,7 +320,7 @@
             </div>
             <div id="4.2.6.8">
                 <div class="align"><i id="i23" class="fa fa-plus" onclick="makeLittle('collapse-23', 'i23')" aria-hidden="true"></i><h2>ViperVision4.2.6.8</h2></div>
-                <ul id="collapse-23" class="inactive">
+                <ul id="collapse-23" class="ininactive">
                     <h3>JumpList</h3>
                     <li>Now there is a "JumpList" available when right-clicking on the icon in the taskbar. The features currently available are: 
                         minimize software, maximize software (this helps when software gets stuck in the taskbar), 
@@ -363,7 +363,7 @@
             </div>
             <div id="4.2.5.7">
                 <div class="align"><i id="i22" class="fa fa-plus" onclick="makeLittle('collapse-22', 'i22')" aria-hidden="true"></i><h2>ViperVision4.2.5.7</h2></div>
-                <ul id="collapse-22" class="inactive">
+                <ul id="collapse-22" class="ininactive">
                     <h3>AX8 Integration</h3>
                     <li>Reintroduced the Flir AX8 to ViperVision but now with much more functionality. Nearly all functionality is supported. Still need settings for the thermal/visible alignment and turning on/off the lamp.</li>
         
@@ -415,7 +415,7 @@
             </div>
             <div id="4.2.4.6">
                 <div class="align"><i id="i21" class="fa fa-plus" onclick="makeLittle('collapse-21', 'i21')" aria-hidden="true"></i><h2>ViperVision4.2.4.6</h2></div>
-                <ul id="collapse-21" class="inactive">
+                <ul id="collapse-21" class="ininactive">
                     <h3>Web Server Replacement</h3>
                     <li>The older ASP.NET Framework web server was replaced with a lighter-weight, more modern ASP.NET Core web server. This new server has all camera feeds on it's home page by default.</li>
         
@@ -449,7 +449,7 @@
             </div>
             <div id="4.1.3.5">
                 <div class="align"><i id="i20" class="fa fa-plus" onclick="makeLittle('collapse-20', 'i20')" aria-hidden="true"></i><h2>ViperVision4.1.3.5</h2></div>
-                <ul id="collapse-20" class="inactive">
+                <ul id="collapse-20" class="ininactive">
                     <h3>Auto Focus In Context Menu</h3>
                     <li>Added an auto focus button to the camera's right click menu.</li>
         
@@ -495,7 +495,7 @@
             </div>
             <div id="4.1.2.4">
                 <div class="align"><i id="i19" class="fa fa-plus" onclick="makeLittle('collapse-19', 'i19')" aria-hidden="true"></i><h2>ViperVision4.1.2.4</h2></div>
-                <ul id="collapse-19" class="inactive">
+                <ul id="collapse-19" class="ininactive">
                     <h3>Pelco-D Via USB</h3>
                     <li>Can now control a P/T using the Pelco-D protocol.</li>
         
@@ -547,7 +547,7 @@
             </div>
             <div id="4.0.1.3">
                 <div class="align"><i id="i18" class="fa fa-plus" onclick="makeLittle('collapse-18', 'i18')" aria-hidden="true"></i><h2>ViperVision4.0.1.3</h2></div>
-                <ul id="collapse-18" class="inactive">
+                <ul id="collapse-18" class="ininactive">
                     <h3>ICI EBT Mode</h3>
                     <li>Added the ability to use the ICI camera with our EBT features.</li>
         
@@ -584,7 +584,7 @@
             </div>
             <div id="4.0.0.2">
                 <div class="align"><i id="i17" class="fa fa-plus" onclick="makeLittle('collapse-17', 'i17')" aria-hidden="true"></i><h2>ViperVision4.0.0.2</h2></div>
-                <ul id="collapse-17" class="inactive">
+                <ul id="collapse-17" class="ininactive">
                     <h3>Email During Pass/Fail Sequence</h3>
                     <li>Added a new feature where an email can be sent during the unique pass/fail processing technique that Emitted likes to use.</li>
         
@@ -651,7 +651,7 @@
             </div>
             <div id="4.0.0.1">
                 <div class="align"><i id="i16" class="fa fa-plus" onclick="makeLittle('collapse-16', 'i16')" aria-hidden="true"></i><h2>ViperVision4.0.0.1</h2></div>
-                <ul id="collapse-16" class="inactive">
+                <ul id="collapse-16" class="ininactive">
                     <h3>Camera Calibration Offset Temperature</h3>
                     <li>There is now a setting to offset all camera ROI temperatures called "Calibration offset temperature" which is located in the camera settings menu.</li>
         
@@ -703,7 +703,7 @@
             </div>
             <div id="4.0.0.0">
                 <div class="align"><i id="i15" class="fa fa-plus" onclick="makeLittle('collapse-15', 'i15')" aria-hidden="true"></i><h2>ViperVision4.0.0.0</h2></div>
-                <ul id="collapse-15" class="inactive">
+                <ul id="collapse-15" class="ininactive">
                     <h3>Redesign</h3>
                     <li>The main form of the application has a more modern look to it. The settings menu is broken down into smaller pieces, however, the software remains live while making changes. We developed our own controls for textboxes, checkboxes, dropdowns, numeric up-downs, and buttons. Also, we have begun using a card approach to showing list data instead of the older style grids. But we have an ever-growing guru menu for users wanting a more involved experience.</li>
         
@@ -719,7 +719,7 @@
             </div>
 	    <div id="3.8.21.34">
                 <div class="align"><i id="i14" class="fa fa-plus" onclick="makeLittle('collapse-14', 'i14')" aria-hidden="true"></i><h2>ViperVision3.8.21.34</h2></div>
-                <ul id="collapse-14" class="inactive">
+                <ul id="collapse-14" class="ininactive">
                     <h3>(Bug) Pan/Tilt Jittering</h3>
                     <li>There is a weird jittering effect when you stopped moving the P/T sometimes. This seems to happen when the command to move is sent with 0 pan and 0 tilt speeds. We made it so after the 0 pan and 0 tilt command is sent 5 consecutive times, it doesn't send it anymore.</li>
         
@@ -729,7 +729,7 @@
             </div>
 	    <div id="3.8.21.33">
                 <div class="align"><i id="i13" class="fa fa-plus" onclick="makeLittle('collapse-13', 'i13')" aria-hidden="true"></i><h2>ViperVision3.8.21.33</h2></div>
-                <ul id="collapse-13" class="inactive">
+                <ul id="collapse-13" class="ininactive">
                     <h3>New Axis Stream</h3>
                     <li>Now using VLC library to stream the Axis camera. This offloads the processing to the GPU and doesn't prevent the Flir A400/A700 from working properly when run at the same time. No longer need the Axis Media Control SDK. Will need to find a way to make recordings with this new streaming format.</li>
         
@@ -754,7 +754,7 @@
             </div>
 	    <div id="3.8.21.32">
                 <div class="align"><i id="i12" class="fa fa-plus" onclick="makeLittle('collapse-12', 'i12')" aria-hidden="true"></i><h2>ViperVision3.8.21.32</h2></div>
-                <ul id="collapse-12" class="inactive">
+                <ul id="collapse-12" class="ininactive">
                     <h3>(Bug) A315 Support</h3>
                     <li>Some issues started for A315 in Atlas 7. Fixed those issues.</li>
         
@@ -764,7 +764,7 @@
             </div>
 	    <div id="3.8.21.31">
                 <div class="align"><i id="i11" class="fa fa-plus" onclick="makeLittle('collapse-11', 'i11')" aria-hidden="true"></i><h2>ViperVision3.8.21.31</h2></div>
-                <ul id="collapse-11" class="inactive">
+                <ul id="collapse-11" class="ininactive">
                     <h3>Thermal Face Detection</h3>
                     <li>First build to include thermal face detection.</li>
         
@@ -792,7 +792,7 @@
             </div>
 	    <div id="3.7.20.30">
                 <div class="align"><i id="i10" class="fa fa-plus" onclick="makeLittle('collapse-10', 'i10')" aria-hidden="true"></i><h2>ViperVision3.7.20.30</h2></div>
-                <ul id="collapse-10" class="inactive">
+                <ul id="collapse-10" class="ininactive">
                     <h3>AST Camera Streaming</h3>
                     <li>The AST camera is now working in 3.0.</li>
         
@@ -814,7 +814,7 @@
             </div>
 	    <div id="3.7.19.29">
                 <div class="align"><i id="i9" class="fa fa-plus" onclick="makeLittle('collapse-9', 'i9')" aria-hidden="true"></i><h2>ViperVision3.7.19.29</h2></div>
-                <ul id="collapse-9" class="inactive">
+                <ul id="collapse-9" class="ininactive">
                     <h3>Access Control</h3>
                     <li>Support for HID card scanner and Wiegand output via Arduino.</li>
         
@@ -839,7 +839,7 @@
             </div>
 	    <div id="3.6.18.28">
                 <div class="align"><i id="i8" class="fa fa-plus" onclick="makeLittle('collapse-8', 'i8')" aria-hidden="true"></i><h2>ViperVision3.6.18.28</h2></div>
-                <ul id="collapse-8" class="inactive">
+                <ul id="collapse-8" class="ininactive">
                     <h3>Export ROI Location Info</h3>
                     <li>Can now feed out an ROI's X, Y, Width, and Height info.</li>
         
@@ -861,7 +861,7 @@
             </div>
 	    <div id="3.6.17.27">
                 <div class="align"><i id="i7" class="fa fa-plus" onclick="makeLittle('collapse-7', 'i7')" aria-hidden="true"></i><h2>ViperVision3.6.17.27</h2></div>
-                <ul id="collapse-7" class="inactive">
+                <ul id="collapse-7" class="ininactive">
                     <h3>Camera DO</h3>
                     <li>Can now trigger the DO on the camera itself.</li>
         
@@ -883,7 +883,7 @@
             </div>
 	    <div id="3.6.16.26">
                 <div class="align"><i id="i6" class="fa fa-plus" onclick="makeLittle('collapse-6', 'i6')" aria-hidden="true"></i><h2>ViperVision3.6.16.26</h2></div>
-                <ul id="collapse-6" class="inactive">
+                <ul id="collapse-6" class="ininactive">
                     <h3>Pixels Over Percentage</h3>
                     <li>Can now alarm when a certain % of ROI is over a certain temperature. Can also feed out the percentage of pixels in ROI over a certain temperature.</li>
         
@@ -911,7 +911,7 @@
             </div>
 	    <div id="3.5.15.25">
                 <div class="align"><i id="i5" class="fa fa-plus" onclick="makeLittle('collapse-5', 'i5')" aria-hidden="true"></i><h2>ViperVision3.5.15.25</h2></div>
-                <ul id="collapse-5" class="inactive">
+                <ul id="collapse-5" class="ininactive">
                     <h3>Pan/Tilt Go To Preset</h3>
                     <li>User now has a way to send the P/T directly to a preset whenever they wanted. This will pause the auto patrol (if it were already on) for 15 minutes.</li>
         
@@ -924,7 +924,7 @@
             </div>
 	    <div id="3.5.14.24">
                 <div class="align"><i id="i4" class="fa fa-plus" onclick="makeLittle('collapse-4', 'i4')" aria-hidden="true"></i><h2>ViperVision3.5.14.24</h2></div>
-                <ul id="collapse-4" class="inactive">
+                <ul id="collapse-4" class="ininactive">
                     <h3>Better Recipe Handling</h3>
                     <li>When loading recipes, only camera settings, ROIs, Analyses, and Processes are changed between config files. System no longer takes a significant amount of time reloading everything.</li>
         
@@ -937,7 +937,7 @@
             </div>
 	    <div id="3.5.13.23">
                 <div class="align"><i id="i3" class="fa fa-plus" onclick="makeLittle('collapse-3', 'i3')" aria-hidden="true"></i><h2>ViperVision3.5.13.23</h2></div>
-                <ul id="collapse-3" class="inactive">
+                <ul id="collapse-3" class="ininactive">
                     <h3>Polygon Improvements</h3>
                     <li>Editing a Polygon's points is much easier now. Just click on the point and move your mouse and the point will follow the mouse easily. We are also now drawing the Polygon ROI with antialiasing so it looks better on the screen.</li>
         
@@ -965,7 +965,7 @@
             </div>
 	    <div id="3.5.13.22">
                 <div class="align"><i id="i2" class="fa fa-plus" onclick="makeLittle('collapse-2', 'i2')" aria-hidden="true"></i><h2>ViperVision3.5.13.22</h2></div>
-                <ul id="collapse-2" class="inactive">
+                <ul id="collapse-2" class="ininactive">
                     <h3>Face ROI Bigger</h3>
                     <li>Increased the size of the face detection region. Now it is full image height.</li>
         
@@ -999,7 +999,7 @@
             </div>
 	    <div id="3.5.12.21">
                 <div class="align"><i id="i3.21" class="fa fa-plus" onclick="makeLittle('collapse-3.21', 'i3.21')" aria-hidden="true"></i><h2>ViperVision3.5.12.21</h2></div>
-                <ul id="collapse-3.21" class="inactive">
+                <ul id="collapse-3.21" class="ininactive">
                     <h3>Manual Reference Temperature</h3>
                     <li>Can now set a reference temperature for the emitter ROI.</li>
         
@@ -1030,7 +1030,7 @@
 			}
 			else {
 				collapse.style.display = 'none';
-				collapse.setAttribute('class', 'inactive');
+				collapse.setAttribute('class', 'ininactive');
 				operand.setAttribute('class', 'fa fa-plus');
 			}
 		}
