@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="ViperWhite.ico">
+        <title>ViperVisionReleaseNotes</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h1 id="title">ViperVision Release Notes</h1>
+                </div>
+                <div class="content"><div id=4.8.14.20><div class="align"><i id="i35" class="fa fa-minus" onclick="makeLittle('collapse-35', 'i35')" aria-hidden="true"></i><h2>ViperVision4.8.14.20</h2></div><ul id="collapse-35" class="active" style="display: block;"> <h3>Automation Technology Camera</h3><li>You can now add and use an Automation Technology camera in ViperVision.</li><h3>Updated Atlas SDK</h3><li>Updated the Flir SDK to the newest version.</li><h3>Snapshot & Video Feature For More Cameras</h3><li>Can now take snapshots and video recordings for AST TE700 and ICI SWIR.</li><h3>AX8 & TE700 In Web Server</h3><li>The video feeds for these two cameras are now displayed in the web server.</li><h3>Restart & System Tray Log Entries</h3><li>When the user restarts the software or clicks to minimize it to the System Tray, a log entry will be made.</li><h3>Toggling IO Data When Logged Out</h3><li>Made it so IO data could not be "toggled" from the IO content windows if the user is logged out.</li><h3>IO Content Window Double-Click</h3><li>When logged in and with the appropriate permissions, a user can double click any IO content grid to open that device's settings.</li><h3>Enter Key When Adding A Camera</h3><li>When you add a camera, when giving it a name, you can press the enter key to emulate clicking the Okay button. </li><h3>Updated manual</h3><li>A revised manual is included in this version.</li><h3>(Bug) New Scanner Classes</h3><li>Switched over to using the new Flir Scanner classes to prevent the access violation bug that can kill the software.</li><h3>(Bug) Camera Disconnected Image & Outputs</h3><li>Made it so the Camera Offline image should always appear if starting the software without the camera connected. Also fixed the various inconsistencies with the camera connection state output process. If camera is connected, the output should be true, otherwise false.</li><h3>(Bug) IO Content UI Updating</h3><li>Fixed the issues that sometimes prevent the IO content UI from updating. For example, an output channel going true but still saying false in the UI. Also, fixed the "red x" issue that sometimes displays in the control (mostly seen when using Adams modules).</li><h3>(Bug) Dock Panel Error Checking</h3><li>Now checking if an error occurs when loading the dock panel config, if so, reset the layout to default.</li><h3>(Bug) Temperature & Emissivity Correction</h3><li>This feature was messed up when moving to 4.0. Fixed that.</li><h3>(Bug) System Tray Icons</h3><li>Fixed the bug that would cause a new "V" icon to appear in the system tray every time the user restarted the software. Also, we are now removing the "V" if the user makes the software full screen again.</li><h3>(Bug) Ellipse & Spot Labels</h3><li>Fixed the bug where the ellipse and spot labels were either hard or impossible to move.</li></ul></div>
+        
+		<div id="4.7.13.19">
+			<div class="align"><i id="i34" class="fa fa-plus" onclick="makeLittle('collapse-34', 'i34')" aria-hidden="true"></i><h2>ViperVision4.7.13.19</h2></div>
+			<ul id="collapse-34" class="inactive" >
+				<h3>Report Template Update</h3>
+				<li>The default report templates have been updated. This update adds detail to make the reports look nicer. Also, the "detailed" Excel report was divided into 2 separate templates, one with database table and another with database table and pixel data.</li>
+
+				<h3>Thermal Image File Name</h3>
+				<li>Now, the camera name for an opened thermal image file is the same as the file's filename.</li>
+
+				<h3>Thermal Image File Default Settings</h3>
+				<li>Now, the default camera settings are applied to an opened thermal image file.</li>
+
+				<h3>(Bug) Visual Image Rotation</h3>
+				<li>On Flir dual streaming cameras, the visible image now rotates like the thermal image.</li>
+
+				<h3>(Bug) Thermal Image File Flying Spot</h3>
+				<li>Fixed the issue of the flying spot not working for an opened thermal image file.</li>
+
+				<h3>(Bug) Thermal Image File Zoom</h3>
+				<li>Fixed the issue of thermal image files not zooming.</li>
+
+				<h3>(Bug) Thermal Image File Analysis & Process</h3>
+				<li>Fixed the issue of analyses and processes not saving for a thermal image file that is docked down like a camera.</li>
+
+				<h3>(Bug) Thermal Image File Camera Count</h3>
+				<li>Fixed the issue of an opened thermal image file counting against a user's license camera count.</li>
+
+				<h3>(Bug) Viewer Network Storage Location</h3>
+				<li>Fixed the issue where the Viewer folder tree does not reload after changing the network storage location.</li>
+
+				<h3>(Bug) Camera State & Temp Outputs - Allen Bradley Tags</h3>
+				<li>Fixed the issue of Allen-Bradley tags not showing up when configuring camera state and temp output.</li>
+
+				<h3>(Bug) Rate Of Change - Alarm Type</h3>
+				<li>Fixed the issue of the rate of change alarm type setting not displaying correctly when editing.</li>
+
+				<h3>(Bug) Delta Analysis Settings Not Saving</h3>
+				<li>Fixed the issue of several delta analysis settings not saving properly and some settings not showing up correctly in the analysis menu.</li>
+
+				<h3>(Bug) Preset Dwell Time Confusion</h3>
+				<li>Fixed the issue of the preset dwell time always being converted back to seconds.</li>
+
+				<h3>(Bug) Siemens Test Connection</h3>
+				<li>Fixed the issue of the test connection button not working for the Siemens PLC.</li>
+
+				<h3>(Bug) Siemens Tag Full Address</h3>
+				<li>Fixed the issue of the tag's full address field populating in the wrong place.</li>
+
+				<h3>(Bug) Siemens IO Window Not Showing</h3>
+				<li>Fixed the issue of the IO window not showing when adding a Siemens PLC until after the software is restarted.</li>
+
+				<h3>(Bug) Siemens Tags For Processes</h3>
+				<li>Fixed the issue of Siemens tags not showing for ROI processes nor for camera state and sensor temperature outputs.</li>
+
+				<h3>(Bug) Numberbox Value And Event</h3>
+				<li>Fixed the issue of the value changed event firing before the value actually changes for our number box controls.</li>
+			</ul>
+		</div>
+		<div id="4.6.11.18">
+			<div class="align"><i id="i33" class="fa fa-plus" onclick="makeLittle('collapse-33', 'i33')" aria-hidden="true"></i><h2>ViperVision4.6.11.18</h2></div>
+			<ul id="collapse-33" class="inactive">
+				<h3>New Notification Control</h3>
+				<li>Replaced the notification control with one that resembles the Windows Toast notifications.</li>
+
+				<h3>Expanded Notifications</h3>
+				<li>Now showing notifications for: snapshots, completed video files, and pdf, excel, and ebt reports. Also, there are notifications when configs, backups, and recipes are saved.</li>
+
+				<h3>All ROI Settings</h3>
+				<li>Added a menu to change settings for all ROIs at once. This also establishes default ROI settings for when new ones are created.</li>
+
+				<h3>More Card Data</h3>
+				<li>Added more card info for AB & Siemens PLC cards, all ctrl comm tag cards, and all channel process cards. Should now be easier to know what the card represents without having to open the editor for that card.</li>
+
+				<h3>Dynamic Reporting</h3>
+				<li>Users can now modify the layout of reports. They can add any number of report templates and trigger them from ROI or channel processes. Reporting formats supported are .xlsx, .csv, .pdf</li>
+
+				<h3>P/T Preset Dwell Time</h3>
+				<li>Unit setting is now available for preset dwell time.</li>
+
+				<h3>P/T Coordinates Display</h3>
+				<li>There is now a graph that shows whether each P/T is moving or stopped. It also displays the P/T's current _preset_ coordinates and the current _actual_ coordinates which shows the precision of the P/T.</li>
+
+				<h3>Overwrite Recipe Buttons</h3>
+				<li>There is now a button in the config manager menu to overwrite your current recipe. Also, there is now a button in the camera's right-click menu that is visible when user is using the recipe feature. This button is disabled if user is logged out. When these buttons are pressed, a popup displays for the user to confirm they want to overwrite the recipe.</li>
+
+				<h3>WCF API</h3>
+				<li>Can now access data about the cameras, ROIs, and analyses via the WCF API.</li>
+
+				<h3>ICI FMX SDK Update</h3>
+				<li>The new ICI SDK has been included.</li>
+
+				<h3>ICI Rotation</h3>
+				<li>Can now rotate the ICI image.</li>
+
+				<h3>ICI Palettes</h3>
+				<li>Can now use rainbow color palette.</li>
+
+				<h3>(Bug) Only Supported ROIs In ROI Menu</h3>
+				<li>Now, only the ROIs supported by the camera are shown in the left and right-click menus.</li>
+
+				<h3>(Bug) Gauge Name</h3>
+				<li>Fixed the issue where not having a gauge name causes the control's title bar to be small preventing the user from being able to move the control.</li>
+
+				<h3>(Bug) Apply Palette Themes</h3>
+				<li>Fixed the bug where an ROI's color theme would not be applied after changing palettes until the software was restarted.</li>
+
+				<h3>(Bug) Cards - Word Wrap</h3>
+				<li>Fixed the issue where card text will wrap to the next line and get cut in half if the text is too long.</li>
+	        	</ul>
+		</div>
+		<div id="4.6.11.17">
+			<div class="align"><i id="i32" class="fa fa-plus" onclick="makeLittle('collapse-32', 'i32')" aria-hidden="true"></i><h2>ViperVision4.6.11.17</h2></div>
+			<ul id="collapse-32" class="inactive">
+				<h3>CSQ File Support</h3>
+				<li>Can now open .csq files in ViperViewer.</li>
+				<h3>(Bug) Viewer File Loading</h3>
+				<li>Fixed the issue of Viewer causing the software to freeze when updating the list of saved files after new thermal files have been created.</li>
+				<h3>(Bug) A310 Range Setting</h3>
+				<li>Fixed the issue of the range not being set properly for A310.</li>
+				<h3>(Bug) 2.0 Config Loading</h3>
+				<li>Fixed some configuration issues when upgrading from version 2 to 4.</li>
+			</ul>
+		</div>
+		<div id="4.6.10.16">
+			<div class="align"><i id="i31" class="fa fa-plus" onclick="makeLittle('collapse-31', 'i31')" aria-hidden="true"></i><h2>ViperVision4.6.10.16</h2></div>
+			<ul id="collapse-31" class="inactive">
+				<h3>Gauges</h3>
+				<li>A new feature to help users visualize data easier. The user can create a unique gauge for each ROI data point they want to monitor. They can select thresholds and colors so the operators can quickly see how close an ROI is to alarming. This feature is unlocked with the Max license.</li>
+
+				<h3>P/T Control Logout</h3>
+				<li>The P/T control is no longer useable when logged out or if the user does not have the appropriate permissions</li>
+
+				<h3>P/T Auto Patrol Stop Analysis</h3>
+				<li>Now, when a P/T is in auto patrol and moving, analyses are disabled until the P/T reaches its next preset, then they are enabled again. If no camera is linked to the P/T, all analyses are disabled, otherwise, only the linked camera's analyses are disabled. Eventually, we will need to add considerations for whether or not the analysis was enabled to begin with, and if the user even wants to disable them while moving. For some applications, you may want analyses to work while the P/T is in auto patrol mode.</li>
+
+				<h3>(Bug) Deleting Disconnected Camera</h3>
+				<li>Fixed the bug where deleting a camera that is not connected can crash the software.</li>
+
+				<h3>(Bug) OPC Config Loading</h3>
+				<li>Fixed the issue where loading a saved configuration (either manually, via external input, or from P/T auto patrol), if the OPC tags are different, the new tags from the previous config remain and the tags for the newly loaded config are not brought back.</li>
+
+				<h3>(Bug) P/T Auto Patrol On Startup</h3>
+				<li>Fixed the bug where the last auto patrol state of the P/T does not remain after a restart.</li>
+
+				<h3>(Bug) ROI Camera DO Process Setting</h3>
+				<li>Fixed the issue where if you set up a process to trigger one of the camera digital outputs, then return to the settings menu, the DO is not selected in the dropdown.</li>
+			</ul>
+		</div>
+		<div id="4.5.9.15">
+			<div class="align"><i id="i30" class="fa fa-plus" onclick="makeLittle('collapse-30', 'i30')" aria-hidden="true"></i><h2>ViperVision4.5.9.15</h2></div>
+			<ul id="collapse-30" class="inactive">
+				<h3>Finished New Camera Discovery</h3>
+				<li>Optimized the use of the new Flir Scanner classes. Now adding and deleting cameras is more stable. Also, updating the available cameras list more accurately.</li>
+
+				<h3>(Bug) P/T Config Swapping Bug</h3>
+				<li>Fixed a bug where P/T config swapping can cause Atlas errors after some time. This resulted in the software crashing.</li>
+
+				<h3>(Bug) Camera Sensor Temperature Output</h3>
+				<li>Fixed the bug which was preventing the camera's sensor temperature from being fed out to external devices properly.</li>
+			</ul>
+		</div>
+	    <div id="4.5.9.14">
+                <div class="align"><i id="i29" class="fa fa-plus" onclick="makeLittle('collapse-29', 'i29')" aria-hidden="true"></i><h2>ViperVision4.5.9.14</h2></div>
+                <ul id="collapse-29" class="inactive">
+			<h3>(Bug) Flir GigE Vision Exclusive Lock</h3>
+			<li>
+			    Some recent code was resulting in CameraDeviceInfo to be created for a single camera multiple times. This causes an exclusive lock error to fire 
+			    and potentially prevents the camera from streaming. We modified that code to try and prevent that.
+			</li>
+		</ul>
+            </div>
+		<div id="4.5.9.13">
+                <div class="align"><i id="i28" class="fa fa-plus" onclick="makeLittle('collapse-28', 'i28')" aria-hidden="true"></i><h2>ViperVision4.5.9.13</h2></div>
+                <ul id="collapse-28" class="inactive">
+		    <h3>Automation Technology Camera</h3>
+		    <li>You can now add and use an Automation Technology camera in ViperVision.</li>
+
+		    <h3>Updated Atlas SDK</h3>
+		    <li>Updated the Flir SDK to the newest version.</li>
+
+		    <h3>Snapshot & Video Feature For More Cameras</h3>
+		    <li>Can now take snapshots and video recordings for AST TE700 and ICI SWIR.</li>
+
+		    <h3>AX8 & TE700 In Web Server</h3>
+		    <li>The video feeds for these two cameras are now displayed in the web server.</li>
+
+		    <h3>Restart & System Tray Log Entries</h3>
+		    <li>When the user restarts the software or clicks to minimize it to the System Tray, a log entry will be made.</li>
+
+		    <h3>Toggling IO Data When Logged Out</h3>
+		    <li>Made it so IO data could not be "toggled" from the IO content windows if the user is logged out.</li>
+
+		    <h3>IO Content Window Double-Click</h3>
+		    <li>When logged in and with the appropriate permissions, a user can double click any IO content grid to open that device's settings.</li>
+
+		    <h3>Enter Key When Adding A Camera</h3>
+		    <li>When you add a camera, when giving it a name, you can press the enter key to emulate clicking the Okay button.</li> 
+
+		    <h3>Updated manual</h3>
+		    <li>A revised manual is included in this version.</li>
+
+		    <h3>(Bug) New Scanner Classes</h3>
+		    <li>Switched over to using the new Flir Scanner classes to prevent the access violation bug that can kill the software.</li>
+
+		    <h3>(Bug) Camera Disconnected Image & Outputs</h3>
+		    <li>Made it so the Camera Offline image should always appear if starting the software without the camera connected. Also fixed the various inconsistencies with the camera connection state output process. If camera is connected, the output should be true, otherwise false.</li>
+
+		    <h3>(Bug) IO Content UI Updating</h3>
+		    <li>Fixed the issues that sometimes prevent the IO content UI from updating. For example, an output channel going true but still saying false in the UI. Also, fixed the "red x" issue that sometimes displays in the control (mostly seen when using Adams modules).</li>
+
+		    <h3>(Bug) Dock Panel Error Checking</h3>
+		    <li>Now checking if an error occurs when loading the dock panel config, if so, reset the layout to default.
+
+		    <h3>(Bug) Temperature & Emissivity Correction</h3>
+		    <li>This feature was messed up when moving to 4.0. Fixed that.</li>
+
+		    <h3>(Bug) System Tray Icons</h3>
+		    <li>Fixed the bug that would cause a new "V" icon to appear in the system tray every time the user restarted the software. Also, we are now removing the "V" if the user makes the software full screen again.</li>
+
+		    <h3>(Bug) Ellipse & Spot Labels</h3>
+		    <li>Fixed the bug where the ellipse and spot labels were either hard or impossible to move.</li>
+		 </ul>
+            	</div>
+		<div id="4.4.8.12">
+                <div class="align"><i id="i27" class="fa fa-plus" onclick="makeLittle('collapse-27', 'i27')" aria-hidden="true"></i><h2>ViperVision4.4.8.12</h2></div>
+                <ul id="collapse-27" class="inactive">
+                    <h3>Web Server Runas Admin</h3>
+                    <li>No longer need to run as admin to get the web server working.</li>
+			
+		    <h3>Updated Atlas</h3>
+		    <li>Updated the Flir SDK. New version is meant to solve the RTSP crashing issue when streaming the new cameras in thermal mode.</li>
+
+        
+                    <h3>(Bug) Camera Dispose Delay</h3>
+                    <li>Found a bug in Atlas that causes the camera's RTSP server to crash if disposing is started and not finished properly. Added a delay after disposing of the camera to prevent the RTSP servers from crashing.</li>
+        
+                    <h3>(Bug) Flir Camera Discovery</h3>
+                    <li>Re-starting the Flir camera discovery every 30 seconds was causing an access violation in Atlas which resulted in ViperVision crashing. Took out the restart timer. Until a permanent fix is implemented for this, camera discovery may not find all available cameras.</li>
+                    
+		    <h3>(Bug) Hiding To System Tray</h3>
+		    <li>Fixed the issue where camera data stops coming through when the software is minimized to the system tray.</li>
+
+		    <h3>(Bug) Recording Freeze</h3>
+                    <li>Fixed the issue where saving videos back-to-back could cause a deadlock.</li>
+		 </ul>
+            </div>
+            <div id="4.4.8.11">
+                <div class="align"><i id="i26" class="fa fa-plus" onclick="makeLittle('collapse-26', 'i26')" aria-hidden="true"></i><h2>ViperVision4.4.8.11</h2></div>
+                <ul id="collapse-26" class="inactive">
+                    <h3>Flir Atlas SDK Update</h3>
+                    <li>Added in the newest SDK from Flir. This includes a fix to get the A310 cameras working again.</li>
+        
+                    <h3>(Bug) A40/50/70/400/500/700 Visible Image Not Working</h3>
+                    <li>In the previous version, the visible image from these cameras stopped working properly. This has been corrected.</li>
+        
+                    <h3>(Bug) Allen-Bradley & Siemens Heartbeat</h3>
+                    <li>Fixed a bug preventing the Allen-Bradley and Siemens heartbeat channel processes from working.</li>
+                </ul>
+            </div>
+	    <div id="4.4.8.10">
+                <div class="align"><i id="i25" class="fa fa-plus" onclick="makeLittle('collapse-25', 'i25')" aria-hidden="true"></i><h2>ViperVision4.4.8.10</h2></div>
+                <ul id="collapse-25" class="inactive">
+	 	    <h3>V1 LED For Standard Alarms</h3>
+                    <li>For the V1 kiosk when not in EBT mode, the software will show a green light when no alarms are active and a red light when there are any alarms.</li>
+			
+                    <h3>Acknowledge Alarms</h3>
+                    <li>Now the user has the option to silence all alarms for an ROI for a certain amount of time. They can also elect to cancel all processes during this time. The menu can be opened from the ROI Summary pane when the alarm becomes active. Additional work will be required to make this specific to individual analyses.</li>
+        
+                    <h3>ICI SWIR Integration</h3>
+                    <li>It is now possible to connect the ICI SWIR camera in ViperVision.</li>
+        
+                    <h3>Physical AI & DI To Modbus Register</h3>
+                    <li>Can now receive an AI or DI from an Adam module and feed it out through the Modbus server.</li>
+        
+                    <h3>P/T Tours & Timelapse</h3>
+                    <li>Made it so when pan tilts and timelapse are used together, a snapshot will be taken at each P/T stop when the timelapse interval has expired.</li>
+			
+		    <h3>Manual Update</h3>
+                    <li>The newest version of the configuration guide was included in this build.</li>
+			
+		    <h3>(Bug) Range Not Always Setting</h3>
+                    <li>Fixed the issue where the camera range was not always being applied properly.</li>
+			
+		    <h3>(Bug) CSV ROI Avg Temperature Labe</h3>
+                    <li>Fixed the issue where the ROI's average temperature was labeled as Min in the CSV report.</li>
+		
+		    <h3>(Bug) Flir Handheld Not Working With 4.0</h3>
+                    <li>Fixed the issue where the Flir portable cameras were not working since 4.0.</li>
+                </ul>
+            </div>
+	    <div id="4.3.7.9">
+                <div class="align"><i id="i24" class="fa fa-plus" onclick="makeLittle('collapse-24', 'i24')" aria-hidden="true"></i><h2>ViperVision4.3.7.9</h2></div>
+                <ul id="collapse-24" class="inactive">
+                    <h3>Charting Improvements</h3>
+                    <li>Now using a different control for charting data to prevent freezing and reduce system resources usage. The user now also has the ability to choose the data series color.</li>
+        
+                    <h3>Joystick Settings Change</h3>
+                    <li>Changed the joystick span increment from 5 to 2 and the zoom sensitivity from 10 to 5.</li>
+        
+                    <h3>Can Add More Flir Cameras Manually</h3>
+                    <li>Made it possible to connect to more Flir camera models using a known IP address.</li>
+        
+                    <h3>Popup Notification</h3>
+                    <li>The software now displays a popup message when a snapshot has been taken.</li>
+                </ul>
+            </div>
+            <div id="4.2.6.8">
+                <div class="align"><i id="i23" class="fa fa-plus" onclick="makeLittle('collapse-23', 'i23')" aria-hidden="true"></i><h2>ViperVision4.2.6.8</h2></div>
+                <ul id="collapse-23" class="inactive">
+                    <h3>JumpList</h3>
+                    <li>Now there is a "JumpList" available when right-clicking on the icon in the taskbar. The features currently available are: 
+                        minimize software, maximize software (this helps when software gets stuck in the taskbar), 
+                        open the configuration guide, and access 1 of the 5 most recent files saved by the software.
+                    </li>
+        
+                    <h3>Taskbar Minimizing/Maximizing</h3>
+                    <li>Now when you click on the application in the taskbar, if it is already minimized it will now maximize and vice versa.</li>
+        
+                    <h3>Enable P/T Preset By Default</h3>
+                    <li>Now when adding presets to the pantilt the routes will be automatically included.</li>
+        
+                    <h3>(Bug) Manual Span For Video File</h3>
+                    <li>Fixed the issue where changing the manual span for a saved file could cause the software to lock up.</li>
+        
+                    <h3>(Bug) Feed Data Context Menu</h3>
+                    <li>Fixed the bug where newer analysis types did not show up properly in the right-click menu.</li>
+        
+                    <h3>(Bug) Line ROI Off Image</h3>
+                    <li>Fixed the bug where the line ROI could be moved outside the bounds of the image.</li>
+        
+                    <h3>(Bug) Add/Edit Windows Open On Main Monitor</h3>
+                    <li>Fixed the issue where menus would open on screen 1 if the software was running on screen 2.</li>
+        
+                    <h3>(Bug) Camera Name Cannot End With Space</h3>
+                    <li>Trimmed off the trailing space in the camera name.</li>
+        
+                    <h3>(Bug) Viewer Directory</h3>
+                    <li>Fixed the issue where the Viewer only showed files in the directory C:\Viper.</li>
+        
+                    <h3>(Bug) ViperVision Displaying With Other Applications</h3>
+                    <li>Fixed the issue where the software can pop up when you are clicking on another software in the taskbar.</li>
+        
+                    <h3>(Bug) Camera Digital Output Not Working</h3>
+                    <li>Fixed a bug that caused the digital outputs to not fire based on the streaming mode.</li>
+        
+                    <h3>(Bug) Web Server Not Broadcasting</h3>
+                    <li>Fixed bug that caused the web server not to broadcast to mobile devices.</li>
+                </ul>
+            </div>
+            <div id="4.2.5.7">
+                <div class="align"><i id="i22" class="fa fa-plus" onclick="makeLittle('collapse-22', 'i22')" aria-hidden="true"></i><h2>ViperVision4.2.5.7</h2></div>
+                <ul id="collapse-22" class="inactive">
+                    <h3>AX8 Integration</h3>
+                    <li>Reintroduced the Flir AX8 to ViperVision but now with much more functionality. Nearly all functionality is supported. Still need settings for the thermal/visible alignment and turning on/off the lamp.</li>
+        
+                    <h3>Streaming Format Setting</h3>
+                    <li>Added a setting for the camera's streaming format. For the new Flir cameras, this would allow the user to stream only the thermal image if they didn't want to stream the visible image.</li>
+        
+                    <h3>P/T Auto Patrol Dropdown</h3>
+                    <li>Changed the P/T Auto patrol toggle switch to a dropdown with more options. You can now turn auto patrol for the selected P/T or for all connected P/Ts.</li>
+        
+                    <h3>Preset Config Loading Process</h3>
+                    <li>When loading a recipe after the P/T reaches a preset, the settings will load for the P/T's linked cameras independently of the others. This way, if you have two P/Ts and two cameras that are linked, when P/T 1 reaches a specific preset you can load ROIs for camera 1 only. This is useful if P/T 2 is still trying to reach its destination and not ready to load ROIs on camera 2 yet or if P/T has more stops than P/T 1. If there are no linked cameras for that P/T, the recipe will be loaded for all cameras.</li>
+        
+                    <h3>Flir Atlas x64 Update</h3>
+                    <li>Includes the newest SDK update from Flir (currently only available for x64).</li>
+        
+                    <h3>Manual Update</h3>
+                    <li>Included the newest edition of the Configuration Guide with updated info for the pan/tilt sections.</li>
+        
+                    <h3>(Bug) PIP Mouse Coordinates</h3>
+                    <li>Fixed the issue of the mouse coordinates not translating to the image coordinates correctly when using PIP Thermal or PIP Visible.</li>
+        
+                    <h3>(Bug) Timelapse Unit Setting</h3>
+                    <li>Fixed the issue where the timelapse unit setting was not working.</li>
+        
+                    <h3>(Bug) Preset Load Config Setting</h3>
+                    <li>Fixed the issue where the recipe name does not show up in the preset menu when editing the preset.</li>
+        
+                    <h3>(Bug) P/T Control Reset Auto Patrol Toggle</h3>
+                    <li>Fixed the issue of the auto patrol toggle not reflecting the right setting when you change the selected P/T.</li>
+        
+                    <h3>(Bug) Snapshot Frequency Dual Camera</h3>
+                    <li>Fixed the bug where snapshot frequency did not work for cameras with dual detectors.</li>
+        
+                    <h3>(Bug) Emailing Can Cause Crash</h3>
+                    <li>Fixed the bug where sending an email can cause the software to crash.</li>
+        
+                    <h3>(Bug) Restart Button Increases Frequency Of Camera Issue</h3>
+                    <li>Fixed the issue where using the restart button causes the camera "power cycle" issue to occur more frequently.</li>
+        
+                    <h3>(Bug) ICI Core Body Temperature Reading</h3>
+                    <li>Fixed the bug where things in the background would affect this reading.</li>
+        
+                    <h3>(Bug) ICI Hot/Cold Spot ROI Indicator</h3>
+                    <li>Fixed the bug where these indicators were backward.</li>
+        
+                    <h3>(Bug) ICI Flying Spot Wrong Temperature</h3>
+                    <li>Fixed the bug where the temperature data for the flying spot was wrong.</li>
+                </ul>
+            </div>
+            <div id="4.2.4.6">
+                <div class="align"><i id="i21" class="fa fa-plus" onclick="makeLittle('collapse-21', 'i21')" aria-hidden="true"></i><h2>ViperVision4.2.4.6</h2></div>
+                <ul id="collapse-21" class="inactive">
+                    <h3>Web Server Replacement</h3>
+                    <li>The older ASP.NET Framework web server was replaced with a lighter-weight, more modern ASP.NET Core web server. This new server has all camera feeds on it's home page by default.</li>
+        
+                    <h3>SQL Database improvements</h3>
+                    <li>A better data infrastructure has been implemented for our SQL data tables. These new table formats should be easier for a SQL savvy customer to access them and understand what's going on with the data. Also, WAL was implemented so that ViperVision could write to the database even if a client was connected and reading data.</li>
+        
+                    <h3>ROI Handling</h3>
+                    <li>ROI Added & Removed events from the Atlas SDK are no longer being utilized. Instead, we are handling the ROIs internally now and just verifying that the SDK has the correct settings after the fact.</li>
+        
+                    <h3>New Color Picker</h3>
+                    <li>There is a new color picker control to make picking colors, like ROI or isotherm color, more user-friendly.</li>
+        
+                    <h3>New Licensing Menus</h3>
+                    <li>There are new menus for the licensing process aimed at making the process more user-friendly.</li>
+        
+                    <h3>SEQ File Processes</h3>
+                    <li>Now, you can create a Process for these files.</li>
+        
+                    <h3>(Bug) ROI Keys Not Working</h3>
+                    <li>Fixed the issue where the hotkeys were not working to adjust ROIs.</li>
+        
+                    <h3>(Bug) EBT Processes Not Working</h3>
+                    <li>Fixed the issue where under some conditions, established EBT processes would not be performed after an EBT scan.</li>
+        
+                    <h3>(Bug) EBT Report Errors</h3>
+                    <li>Fixed the issue where the camera name, total # of scans, and # of failed scans were wrong in the EBT report.</li>
+        
+                    <h3>(Bug) Many Camera Rotation</h3>
+                    <li>Fixed the issue where using rotation with Atlas can cause the ROI location data to be messed up.</li>
+                </ul>
+            </div>
+            <div id="4.1.3.5">
+                <div class="align"><i id="i20" class="fa fa-plus" onclick="makeLittle('collapse-20', 'i20')" aria-hidden="true"></i><h2>ViperVision4.1.3.5</h2></div>
+                <ul id="collapse-20" class="inactive">
+                    <h3>Auto Focus In Context Menu</h3>
+                    <li>Added an auto focus button to the camera's right click menu.</li>
+        
+                    <h3>NUC In Context Menu</h3>
+                    <li>Added a NUC button to the camera's right click menu.</li>
+        
+                    <h3>Axis Camera Rotation</h3>
+                    <li>It is now possible to set the rotation angle of the Axis camera video stream.</li>
+        
+                    <h3>Axis Camera Mirror Image</h3>
+                    <li>You can now mirror the Axis camera video feed.</li>
+        
+                    <h3>(Bug) All Cameras Range Setting</h3>
+                    <li>Fixed the issue of the "all cameras range" setting not applying the new range option.</li>
+        
+                    <h3>(Bug) Dropdown Size And Scroll Bars</h3>
+                    <li>Fixed the issue where dropdowns don't size properly when the item text is wider than the max width of the dropdown.</li>
+        
+                    <h3>(Bug) Color Dropdowns Take Forever</h3>
+                    <li>Fixed the issue of the color dropdowns taking a long time to load.</li>
+        
+                    <h3>(Bug) All Cameras Manual Span</h3>
+                    <li>Fixed the issue where the manual span settings in the all camera settings menu were not applying the setting.</li>
+        
+                    <h3>(Bug) Isotherm Menu Issues</h3>
+                    <li>Fixed the issues related to the isotherm menu.</li>
+        
+                    <h3>(Bug) Number Box Input</h3>
+                    <li>Fixed the issue where typing into a number box can negate the change if the typed value is below the minimum allowable value.</li>
+        
+                    <h3>(Bug) Annulus Local Parameters</h3>
+                    <li>Fixed the bug where applying an emissivity to the annulus ROI type would not affect its temperature reading.</li>
+        
+                    <h3>(Bug) Viewer Trackbar</h3>
+                    <li>Fixed the bug where moving the trackbar on an .seq file could cause the software to freeze up.</li>
+        
+                    <h3>(Bug) Shape Detection Setup & Tesing</h3>
+                    <li>Fixed some issues with setting up and testing shape detection.</li>
+        
+                    <h3>(Bug) Joystick Buttons Not Working</h3>
+                    <li>Fixed the issue where the PT joystick buttons were not working.</li>
+                </ul>
+            </div>
+            <div id="4.1.2.4">
+                <div class="align"><i id="i19" class="fa fa-plus" onclick="makeLittle('collapse-19', 'i19')" aria-hidden="true"></i><h2>ViperVision4.1.2.4</h2></div>
+                <ul id="collapse-19" class="inactive">
+                    <h3>Pelco-D Via USB</h3>
+                    <li>Can now control a P/T using the Pelco-D protocol.</li>
+        
+                    <h3>Viewer Load Pre-Existing ROIs</h3>
+                    <li>Added the feature of populating saved ROIs when opening a saved file. The user has the option of using the saved ROIs for each file or only showing the new ROIs that they have created.</li>
+        
+                    <h3>EBT Thermal Face Detection On DI</h3>
+                    <li>It is now possible to start an EBT scan on input from some control comm device.</li>
+        
+                    <h3>Axis Camera HTTP Stream</h3>
+                    <li>Switched the Axis camera stream to an HTTP stream so the lag would go away.</li>
+        
+                    <h3>Axis Camera Context Menu</h3>
+                    <li>Made it so the right-click menu would pop up for the Axis camera.</li>
+        
+                    <h3>Axis Camera Web Server</h3>
+                    <li>The Axis camera video feed is now available on the web server.</li>
+        
+                    <h3>New Access Control Types</h3>
+                    <li>There are now two new options for access control format. Corporate1000 and unaltered.</li>
+        
+                    <h3>(Bug) ICI High Temp Mode</h3>
+                    <li>Fixed an issue which caused the ICI camera to not do an EBT scan when in high temp mode.</li>
+        
+                    <h3>(Bug) OPC Input Tag Error</h3>
+                    <li>Fixed the bug where the input tag could cause errors in different OPC clients.</li>
+        
+                    <h3>(Bug) Freeze Image, Part Number, Load Configuration, Archive Database, and Folder Structure Channel Processes Wrong Settings</h3>
+                    <li>Fixed the issue of these channel processes not showing the correct settings when going back into the menu.</li>
+        
+                    <h3>(Bug) OPC UA Update Rate</h3>
+                    <li>Added the UpdateRate setting to the OPC UA config file so the user can change it.</li>
+        
+                    <h3>(Bug) Freeze Image Duplicate ROIs</h3>
+                    <li>Fixed the issue of the thermal image having duplicate ROIs when the image is frozen. The problem still exists for the visible image (new Flir cameras) due to a bug in the Atlas SDK. This has been brought up to Flir.</li>
+        
+                    <h3>(Bug) Allen-Bradley ROI Process</h3>
+                    <li>Fixed the issue of not being able to add an Allen-Bradley ROI process.</li>
+        
+                    <h3>(Bug) Allen-Bradley Channel Process Blank Menu</h3>
+                    <li>Fixed the issue of the channel process menu showing up blank for an AB output tag that is integer, double, or string. The menu no longer opens at all because there is no channel process for these tag types.</li>
+        
+                    <h3>(Bug) Viewer New ROI Not Showing</h3>
+                    <li>Fixed a bug where drawing an ROI on a freshly opened saved image would not show.</li>
+        
+                    <h3>(Bug) Temperature Display In Analysis Menus</h3>
+                    <li>Fixed the bug where Â°F always shows in the analysis menus no matter which temperature unit the user is using.</li>
+                </ul>
+            </div>
+            <div id="4.0.1.3">
+                <div class="align"><i id="i18" class="fa fa-plus" onclick="makeLittle('collapse-18', 'i18')" aria-hidden="true"></i><h2>ViperVision4.0.1.3</h2></div>
+                <ul id="collapse-18" class="inactive">
+                    <h3>ICI EBT Mode</h3>
+                    <li>Added the ability to use the ICI camera with our EBT features.</li>
+        
+                    <h3>Points Inside Polygon</h3>
+                    <li>Finished this feature so we can do certain analysis types, like Pixels Over Percentage.</li>
+        
+                    <h3>ROI Shading</h3>
+                    <li>This feature now fills the ROI region when it is selected to better show the user the region the ROI covers.</li>
+        
+                    <h3>Option For OPC UA Autostart</h3>
+                    <li>Added a setting to autostart the OPC UA server. It is in the OPC Server section in the Ctrl Comm menu. The software will only start the OPC UA server if this option is turned on. The option is off by default.</li>
+        
+                    <h3>Automatically Restart OPC UA</h3>
+                    <li>Now the software restarts the OPC UA server (if it's autostart setting is on) when an OPC tag is created.</li>
+        
+                    <h3>(Bug) Creating ROIs When Turning EBT On</h3>
+                    <li>Fixed the issue of the EBT ROIs not being created properly when you first turn on EBT mode.</li>
+        
+                    <h3>(Bug) Deleting ROI Not On ThermalImage</h3>
+                    <li>Fixed the issue of not being able to delete an ROI if it is not in the Flir camera's ThermalImage.</li>
+        
+                    <h3>(Bug) Turning On EBT Emitter ROI</h3>
+                    <li>Fixed the bug related to the emitter ROI not showing when you first turn it on until you restart the software.</li>
+        
+                    <h3>(Bug) EBT Reference Temp Settings</h3>
+                    <li>Fixed the bug related to the reference temp settings not changing from the EBT Emitter ROI menu.</li>
+        
+                    <h3>(Bug) EBT Report Wrong Timespan</h3>
+                    <li>Fixed the issue of the EBT report pulling all data instead of just the last day's worth of data.</li>
+        
+                    <h3>(Bug) EBT Report Illegal Characters</h3>
+                    <li>Fixed the issue related to the EBT report not working if the camera has a space in the name.</li>
+                </ul>
+            </div>
+            <div id="4.0.0.2">
+                <div class="align"><i id="i17" class="fa fa-plus" onclick="makeLittle('collapse-17', 'i17')" aria-hidden="true"></i><h2>ViperVision4.0.0.2</h2></div>
+                <ul id="collapse-17" class="inactive">
+                    <h3>Email During Pass/Fail Sequence</h3>
+                    <li>Added a new feature where an email can be sent during the unique pass/fail processing technique that Emitted likes to use.</li>
+        
+                    <h3>EBT Card Scan Sequence</h3>
+                    <li>There is now an access control option where a user must scan their access control card prior to getting their temperature measured. The system will not detect faces until they have scanned their card.</li>
+        
+                    <h3>(Bug) Licensing When Not Admin</h3>
+                    <li>Fixed the bug where the software would not start up when not run as admin.</li>
+        
+                    <h3>(Bug) Auto Patrol Not Working</h3>
+                    <li>Fixed the bug of the pan/tilt auto patrol not working.</li>
+        
+                    <h3>(Bug) Load Saved Zoom Button Not Updating</h3>
+                    <li>Fixed the bug which occurs when you click to load the saved optical zoom, the value is sent to the camera but not updated on the screen.</li>
+        
+                    <h3>(Bug) Crash Switching To PIP Thermal</h3>
+                    <li>Fixed the bug which occurs when you switch from display mode "Thermal" to "PIP Thermal", the software crashes.</li>
+        
+                    <h3>(Bug) Freeze Image Channel Process Not Unfreezing</h3>
+                    <li>Fixed the issue of the frozen image not resuming when you toggle the state of the channel process.</li>
+        
+                    <h3>(Bug) Freeze Image Channel Process Visible Image</h3>
+                    <li>Fixed the issue of the freeze image channel process not working on the visible image.</li>
+        
+                    <h3>(Bug) Peak Hold Switch Not Working</h3>
+                    <li>Fixed the issue of the peak hold switch not changing the state of EBT peak hold.</li>
+        
+                    <h3>(Bug) EBT Control Size</h3>
+                    <li>Fixed the issue of the EBT control not sizing properly depending on which features are turned on and what screen size the software is being displayed on. Now, we dynamically set the height and width of all EBT controls to better take up space.</li>
+        
+                    <h3>(Bug) Channel Process For New Modbus Server Coil/Contact</h3>
+                    <li>Fixed the issue of when you are in the process of adding a new modbus server channel definition and you click to add a channel process, the channel process screen is blank.</li>
+        
+                    <h3>(Bug) Channel Process For Modbus Server Not Deleting</h3>
+                    <li>Fixed the issue of deleting a Modbus server channel process does not remove it.</li>
+        
+                    <h3>(Bug) Adding Modbus Server Pass/Fail Channel Process</h3>
+                    <li>Fixed the issue of not being able to add the pass/fail type channel process to a Modbus server channel.</li>
+        
+                    <h3>(Bug) Heartbeat Channel Process Checkbox</h3>
+                    <li>Fixed the issue of the heartbeat channel process always being unchecked when editing.</li>
+        
+                    <h3>(Bug) Pan/Tilt Camera Selection</h3>
+                    <li>Added the camera selection for a pan/tilt which we had in 3.0.</li>
+        
+                    <h3>(Bug) Issues Adding Allen-Bradley Tags/Processes</h3>
+                    <li>Fixed the issue where if the PLC is in the process of being added, it isn't possible to add a tag to it. Only after adding the PLC will this work. A similar thing happens with adding processes to a tag that is still being created.</li>
+        
+                    <h3>(Bug) OPC Process For New Tag</h3>
+                    <li>Fixed the issue of not being able to add a channel process to an OPC tag until the tag has been created.</li>
+        
+                    <h3>(Bug) OPC Process Blank Menu</h3>
+                    <li>Fixed the issue of the channel process menu being blank for an Output tag with datatype Double, Integer, or String.</li>
+        
+                    <h3>(Bug) Trial License Not Ending</h3>
+                    <li>Fixed the issue of the default trial not expiring.</li>
+        
+                    <h3>(Bug) EBT Graph Not Visible</h3>
+                    <li>Fixed the issue of the EBT graph not showing up when turned on after restart.</li>
+        
+                    <h3>(Bug) EBT Not Resetting Sometimes</h3>
+                    <li>Fixed the issue of the EBT screen not resetting sometimes when a face was not detected.</li>
+                </ul>
+            </div>
+            <div id="4.0.0.1">
+                <div class="align"><i id="i16" class="fa fa-plus" onclick="makeLittle('collapse-16', 'i16')" aria-hidden="true"></i><h2>ViperVision4.0.0.1</h2></div>
+                <ul id="collapse-16" class="inactive">
+                    <h3>Camera Calibration Offset Temperature</h3>
+                    <li>There is now a setting to offset all camera ROI temperatures called "Calibration offset temperature" which is located in the camera settings menu.</li>
+        
+                    <h3>Web Page Update</h3>
+                    <li>Made it possible to hide the snapshot, record, and excel buttons at the top. Also added the EBT countdown time when in EBT mode.</li>
+        
+                    <h3>OPC UA Autostart</h3>
+                    <li>The software automatically starts/restarts the OPC UA server on startup and shuts the OPC UA server down when it is closed.</li>
+        
+                    <h3>Added ROI Analysis Info To .CSV Report</h3>
+                    <li>All alarm type analyses thresholds and statuses are now displayed in the .csv report.</li>
+        
+                    <h3>New .CSV Header On ROI Name Change</h3>
+                    <li>Made it so a new header would be created in the .csv file if the ROI name is changed.</li>
+        
+                    <h3>AST Update</h3>
+                    <li>New SDK files to fix the "image tearing" problem we were having with the AST cameras.</li>
+        
+                    <h3>(Bug) UI Unresponsive/Sluggish</h3>
+                    <li>Fixed the issue of the UI becoming less responsive the more cameras you add.</li>
+        
+                    <h3>(Bug) Logged Out Single-Camera Snapshot</h3>
+                    <li>Fixed the bug where you could not take a snapshot from the right-click menu on anything other than the first camera when logged out.</li>
+        
+                    <h3>(Bug) Span Settings Not Loading Correctly</h3>
+                    <li>Fixed the bug of the manual span settings not loading on restart.</li>
+        
+                    <h3>(Bug) Thermal Scale Not Updating</h3>
+                    <li>Fixed the bug of the thermal scale not working.</li>
+        
+                    <h3>(Bug) Dash Symbol In Number Boxes</h3>
+                    <li>Fixed the bug where you could not type the dash symbol (-) in number boxes. This prevented you from entering negative numbers.</li>
+        
+                    <h3>(Bug) Camera Emissivity and Transmissivity</h3>
+                    <li>Fixed the issue of the camera menu not opening with these values set properly.</li>
+        
+                    <h3>(Bug) All Camera Framerate</h3>
+                    <li>Fixed the issue of the all-camera framerate setting not actually applying the new framerate.</li>
+        
+                    <h3>(Bug) Alarm After Changing Temperature Unit</h3>
+                    <li>Fixed the issue where an existing Analysis goes into alarm after changing the temperature unit because its threshold did not also change.</li>
+        
+                    <h3>(Bug) Pass/Fail Channel Process</h3>
+                    <li>Fixed the issue of not being able to add this type of channel process.</li> 
+        
+                    <h3>(Bug) OPC Heartbeat Not Working</h3>
+                    <li>Fixed the issue of the OPC tag channel process not working.</li>
+                </ul>
+            </div>
+            <div id="4.0.0.0">
+                <div class="align"><i id="i15" class="fa fa-plus" onclick="makeLittle('collapse-15', 'i15')" aria-hidden="true"></i><h2>ViperVision4.0.0.0</h2></div>
+                <ul id="collapse-15" class="inactive">
+                    <h3>Redesign</h3>
+                    <li>The main form of the application has a more modern look to it. The settings menu is broken down into smaller pieces, however, the software remains live while making changes. We developed our own controls for textboxes, checkboxes, dropdowns, numeric up-downs, and buttons. Also, we have begun using a card approach to showing list data instead of the older style grids. But we have an ever-growing guru menu for users wanting a more involved experience.</li>
+        
+                    <h3>Licensing</h3>
+                    <li>We implemented a new license scheme. This new approach allows us to provide online licensing by creating the license for the customer when they make a purchase and sending them a Registration Key. They can use that key while their PC is online for the software to communicate with our licensing site and get the corresponding license.</li>
+        
+                    <h3>Viewer</h3>
+                    <li>ViperViewer has been pulled into the application and is no longer a stand-alone app. This will allow us to continue developing it so it does not get left behind. Files can be opened and docked just like live cameras. Any docked files load back up when the software reloads.</li>
+        
+                    <h3>CSV Report</h3>
+                    <li>Changed the layout of the .csv report to meet Emitted's preferred structure.</li>
+                </ul>
+            </div>
+	    <div id="3.8.21.34">
+                <div class="align"><i id="i14" class="fa fa-plus" onclick="makeLittle('collapse-14', 'i14')" aria-hidden="true"></i><h2>ViperVision3.8.21.34</h2></div>
+                <ul id="collapse-14" class="inactive">
+                    <h3>(Bug) Pan/Tilt Jittering</h3>
+                    <li>There is a weird jittering effect when you stopped moving the P/T sometimes. This seems to happen when the command to move is sent with 0 pan and 0 tilt speeds. We made it so after the 0 pan and 0 tilt command is sent 5 consecutive times, it doesn't send it anymore.</li>
+        
+                    <h3>(Bug) Axis Freeze</h3>
+                    <li>After a while, the Axis camera can stop streaming. We can now detect this and restart the stream.</li>
+                </ul>
+            </div>
+	    <div id="3.8.21.33">
+                <div class="align"><i id="i13" class="fa fa-plus" onclick="makeLittle('collapse-13', 'i13')" aria-hidden="true"></i><h2>ViperVision3.8.21.33</h2></div>
+                <ul id="collapse-13" class="inactive">
+                    <h3>New Axis Stream</h3>
+                    <li>Now using VLC library to stream the Axis camera. This offloads the processing to the GPU and doesn't prevent the Flir A400/A700 from working properly when run at the same time. No longer need the Axis Media Control SDK. Will need to find a way to make recordings with this new streaming format.</li>
+        
+                    <h3>Range Selections</h3>
+                    <li>After a recent Atlas 7 update, our previous workaround for the ranges no longer worked. They only fixed the issue in the 32 bit version of Atlas. So the temperatures don't show correctly in 64 bit version.</li>
+					
+		    <h3>New Camera Sensor Temperature</h3>
+                    <li>Now getting the sensor temperature for the new A400/A500/A700 cameras.</li>
+        
+                    <h3>Updated Atlas 7</h3>
+                    <li>Has the newest version of Atlas 7.</li>
+        
+                    <h3>(Bug) Pan/Tilt Joystick</h3>
+                    <li>There was an issue with the joystick causing it to not work. That is now fixed.</li>
+        
+                    <h3>(Bug) Axis Camera Blocks Flir Camera</h3>
+                    <li>Discovering an Axis camera causes the Flir to not show up in the available cameras list.</li>
+        
+                    <h3>(Bug) Web Page Not Working</h3>
+                    <li>We made some changes to the WCF interface which caused the web page to stop working. Fixed that.</li>
+                </ul>
+            </div>
+	    <div id="3.8.21.32">
+                <div class="align"><i id="i12" class="fa fa-plus" onclick="makeLittle('collapse-12', 'i12')" aria-hidden="true"></i><h2>ViperVision3.8.21.32</h2></div>
+                <ul id="collapse-12" class="inactive">
+                    <h3>(Bug) A315 Support</h3>
+                    <li>Some issues started for A315 in Atlas 7. Fixed those issues.</li>
+        
+                    <h3>(Bug) A655sc Support</h3>
+                    <li>The A655sc can now work with ViperVision.</li>
+                </ul>
+            </div>
+	    <div id="3.8.21.31">
+                <div class="align"><i id="i11" class="fa fa-plus" onclick="makeLittle('collapse-11', 'i11')" aria-hidden="true"></i><h2>ViperVision3.8.21.31</h2></div>
+                <ul id="collapse-11" class="inactive">
+                    <h3>Thermal Face Detection</h3>
+                    <li>First build to include thermal face detection.</li>
+        
+                    <h3>Xenics Camera Functionality</h3>
+                    <li>Can now draw ROIs on the Serval and create Analysis & Process. Can also use the iron palette.</li>
+					
+		    <h3>Axis Camera Optical Zoom</h3>
+                    <li>Now have the ability to control the Axis camera's optical zoom.</li>
+        
+                    <h3>Axis Camera Focus</h3>
+                    <li>Now have the ability to focus the Axis camera.</li>
+        
+                    <h3>Temperature Array To WCF Interface</h3>
+                    <li>Modified the WCF interface so the camera's temperature array could be accessed by a connected app.</li>
+        
+                    <h3>New Kiosk LED Control</h3>
+                    <li>Now have the ability to control the new kiosk's LEDs. These are synced up to resemble the colors of the EBT scans. Can also control the LEDs for face illumination.</li>
+        
+                    <h3>New Kiosk Printer</h3>
+                    <li>Now have the ability to print from the new kiosk printer.</li>
+        
+                    <h3>Atlas 6 Build</h3>
+                    <li>Built an Atlas 6 version for the A315 cameras.</li>
+                </ul>
+            </div>
+	    <div id="3.7.20.30">
+                <div class="align"><i id="i10" class="fa fa-plus" onclick="makeLittle('collapse-10', 'i10')" aria-hidden="true"></i><h2>ViperVision3.7.20.30</h2></div>
+                <ul id="collapse-10" class="inactive">
+                    <h3>AST Camera Streaming</h3>
+                    <li>The AST camera is now working in 3.0.</li>
+        
+                    <h3>AST Camera Draw ROIs</h3>
+                    <li>Can draw spot, line, rectangle, and ellipse ROIs.</li>
+					
+		    <h3>Center X & Y Analysis</h3>
+                    <li>Can now output the center point for ROIs.</li>
+        
+                    <h3>Pipe Detection Functionality.</h3>
+                    <li>Added in the Grant Pride Co pipe detection functionality into 3.0 finally.</li>
+        
+                    <h3>Turn Off A500 Flir Overlay</h3>
+                    <li>The A500 cameras have an overlay that must be turned off every time the camera is connected.</li>
+        
+                    <h3>32 Bit Build</h3>
+                    <li>Had to build a 32 bit version only for AST camera support.</li>
+                </ul>
+            </div>
+	    <div id="3.7.19.29">
+                <div class="align"><i id="i9" class="fa fa-plus" onclick="makeLittle('collapse-9', 'i9')" aria-hidden="true"></i><h2>ViperVision3.7.19.29</h2></div>
+                <ul id="collapse-9" class="inactive">
+                    <h3>Access Control</h3>
+                    <li>Support for HID card scanner and Wiegand output via Arduino.</li>
+        
+                    <h3>A500 Support</h3>
+                    <li>Made changes so the A500 would display ROIs on the visible image correctly.</li>
+					
+		    <h3>Quiet Flir Device Drivers Install</h3>
+                    <li>Made it so the Device Drivers installer would be installed quietly. This means ViperVision can now also be installed quietly.</li>
+        
+                    <h3>VCRedist 2015, 2017, 2019</h3>
+                    <li>Added new VC++ redistributable to the installer for 64-bit support.</li>
+        
+                    <h3>Size of eye ROI</h3>
+                    <li>The eye ROI is now 10% smaller.</li>
+        
+                    <h3>EBT Pass/Fail Indicator On Webpage</h3>
+                    <li>There is now a small circle on the webpage thermal image indicating the EBT status.</li>
+					
+		    <h3>(Bug) Rotation</h3>
+                    <li>Sometimes camera rotation does not work correctly. This can potentially mess up the ROIs.</li>
+                </ul>
+            </div>
+	    <div id="3.6.18.28">
+                <div class="align"><i id="i8" class="fa fa-plus" onclick="makeLittle('collapse-8', 'i8')" aria-hidden="true"></i><h2>ViperVision3.6.18.28</h2></div>
+                <ul id="collapse-8" class="inactive">
+                    <h3>Export ROI Location Info</h3>
+                    <li>Can now feed out an ROI's X, Y, Width, and Height info.</li>
+        
+                    <h3>Hide EBT Graph</h3>
+                    <li>Now there is an option to hide the EBT graph. When graph is hidden, we rearrange the EBT light control and the company logo.</li>
+					
+		    <h3>Atlas Update</h3>
+                    <li>Added new SDK files received from Flir on 10/19/2020.</li>
+        
+                    <h3>Not Serializing Points</h3>
+                    <li>We were storing all points inside an ROI for a new feature we offer. But this list gets really bigÂ when the ROIs are large. Now, setting these on load.</li>
+        
+                    <h3>(Bug) Display Layout Loading</h3>
+                    <li>Fixed a bug which can cause the software to get stuck in a loop when trying to load a saved display layout.</li>
+        
+                    <h3>(Bug) Icons Disappearing When Changing Bitness</h3>
+                    <li>When you upgrade from 32 bit to 64 bit or vice versa, the desktop icons no longer disappear.</li>
+                </ul>
+            </div>
+	    <div id="3.6.17.27">
+                <div class="align"><i id="i7" class="fa fa-plus" onclick="makeLittle('collapse-7', 'i7')" aria-hidden="true"></i><h2>ViperVision3.6.17.27</h2></div>
+                <ul id="collapse-7" class="inactive">
+                    <h3>Camera DO</h3>
+                    <li>Can now trigger the DO on the camera itself.</li>
+        
+                    <h3>Automatically Cycle Through Tabbed Windows</h3>
+                    <li>Can now have the software automatically cycle through tabbed windows. User can adjust the frequency of this cycling.</li>
+					
+		    <h3>Emitter Max Temp</h3>
+                    <li>Compare blackbody reference temp with emitter ROI max instead of avg.</li>
+        
+                    <h3>EBT Avg 5 Scan Minimum</h3>
+                    <li>Changed the average scan minimum from 3 to 5.</li>
+        
+                    <h3>Atlas 6 Build</h3>
+                    <li>This version also has a separate build with Atlas 6. It is a 64 bit build.</li>
+        
+                    <h3>(Bug) Splash Page Memory Leak</h3>
+                    <li>Fixed the memory leak in the splash page.</li>
+                </ul>
+            </div>
+	    <div id="3.6.16.26">
+                <div class="align"><i id="i6" class="fa fa-plus" onclick="makeLittle('collapse-6', 'i6')" aria-hidden="true"></i><h2>ViperVision3.6.16.26</h2></div>
+                <ul id="collapse-6" class="inactive">
+                    <h3>Pixels Over Percentage</h3>
+                    <li>Can now alarm when a certain % of ROI is over a certain temperature. Can also feed out the percentage of pixels in ROI over a certain temperature.</li>
+        
+                    <h3>EBT Dymo Printing</h3>
+                    <li>Can now print out tickets for users who passed the EBT scan.</li>
+					
+		    <h3>DI To OPC Tag</h3>
+                    <li>Oxea needed a feature where a Digital Input can be sent directly to an OPC tag.</li>
+        
+                    <h3>Prompt User To Load Backup</h3>
+                    <li>If the config file is in a corrupt state, ask the user if they want to load from a backup file. Then let them choose which file to load.</li>
+        
+                    <h3>Hide Unhandled and Thread Exceptions</h3>
+                    <li>Only log these exceptions in the log file. Nop longer displaying on the screen.</li>
+        
+                    <h3>(Bug) Double EBT ROIs</h3>
+                    <li>The delay that had to be put in place for drawing ROIs on the G300a in Atlas 7, had a side effect which resulted in the MeasurementCollectionAdded and MeasurementCollectionRemoved events being wired up prematurely when EBT mode was on. This resulted in two face ROIs being drawn.</li>
+			
+		    <h3>(Bug) Image Cut Off</h3>
+                    <li>Fixed the bug of the images getting cut off when the size of their control is small.</li>
+			
+		    <h3>(Bug) Manually Toggling Allen-Bradley Issue</h3>
+                    <li>When you manually toggle an Allen-Bradley tag, it no longer properly recognizes state change from PLC side.</li>
+                </ul>
+            </div>
+	    <div id="3.5.15.25">
+                <div class="align"><i id="i5" class="fa fa-plus" onclick="makeLittle('collapse-5', 'i5')" aria-hidden="true"></i><h2>ViperVision3.5.15.25</h2></div>
+                <ul id="collapse-5" class="inactive">
+                    <h3>Pan/Tilt Go To Preset</h3>
+                    <li>User now has a way to send the P/T directly to a preset whenever they wanted. This will pause the auto patrol (if it were already on) for 15 minutes.</li>
+        
+                    <h3>(Bug) Pan/Tilt Multiple Snapshot</h3>
+                    <li>Fixed bug of P/T taking multiple snapshots when reaching a preset.</li>
+					
+		    <h3>(Bug) Range And Emissivity Settings From Recipe Load</h3>
+                    <li>Something could result in the camera emissivity being set to zero when loading a recipe.</li>
+                </ul>
+            </div>
+	    <div id="3.5.14.24">
+                <div class="align"><i id="i4" class="fa fa-plus" onclick="makeLittle('collapse-4', 'i4')" aria-hidden="true"></i><h2>ViperVision3.5.14.24</h2></div>
+                <ul id="collapse-4" class="inactive">
+                    <h3>Better Recipe Handling</h3>
+                    <li>When loading recipes, only camera settings, ROIs, Analyses, and Processes are changed between config files. System no longer takes a significant amount of time reloading everything.</li>
+        
+                    <h3>(Bug) OPC Tags Not Working Right</h3>
+                    <li>String and Int type OPC tags have not been working properly since 3.0 where we updated the OPC server.</li>
+					
+		    <h3>(Bug) Rotation With Older Cameras</h3>
+                    <li>Fixed issues related to rotating the image of older cameras such as A35/65 with Atlas 7.</li>
+                </ul>
+            </div>
+	    <div id="3.5.13.23">
+                <div class="align"><i id="i3" class="fa fa-plus" onclick="makeLittle('collapse-3', 'i3')" aria-hidden="true"></i><h2>ViperVision3.5.13.23</h2></div>
+                <ul id="collapse-3" class="inactive">
+                    <h3>Polygon Improvements</h3>
+                    <li>Editing a Polygon's points is much easier now. Just click on the point and move your mouse and the point will follow the mouse easily. We are also now drawing the Polygon ROI with antialiasing so it looks better on the screen.</li>
+        
+                    <h3>Range Workaround For A400/A700</h3>
+                    <li>This is in place while Flir fixes the range bug in the SDK.</li>
+					
+		    <h3>EBT Vertical Monitor Support</h3>
+                    <li>Make it so when the display is in portrait mode, the EBT control can be loaded above or below the images.</li>
+			
+		    <h3>Moved Database File To ProgramData Folder</h3>
+                    <li>The database file was being created in the ProgramFiles folder. Moving it to the ProgramData folder because that is a safe location and does not require admin privileges to use.</li>
+        
+                    <h3>Turned Auto Patrol On By Default</h3>
+                    <li>Made it so auto patrol would turn on after startup.</li>
+					
+		    <h3>Preset Name As Part Number</h3>
+                    <li>Made it so the P/T preset name would be used as a part number when Modified Subfolder is turned on.</li>
+			
+		    <h3>ROI Creation Delay</h3>
+                    <li>There appears to be a bug in the SDK where the MeasurementCollectionRemoved event fires just after adding an ROI to the thermal image during startup. Added a delay of 5 seconds after starting up before creating saved ROIs.</li>
+					
+		    <h3>(Bug) Updated Web Server App.Config</h3>
+                    <li>Web server changed Infragistics version number recently without us knowing. Fixed that.</li>
+                </ul>
+            </div>
+	    <div id="3.5.13.22">
+                <div class="align"><i id="i2" class="fa fa-plus" onclick="makeLittle('collapse-2', 'i2')" aria-hidden="true"></i><h2>ViperVision3.5.13.22</h2></div>
+                <ul id="collapse-2" class="inactive">
+                    <h3>Face ROI Bigger</h3>
+                    <li>Increased the size of the face detection region. Now it is full image height.</li>
+        
+                    <h3>Audible EBT Instructions</h3>
+                    <li>Added audible cue to remove hat, glasses, and mask.</li>
+					
+		    <h3>Remove Light Control Temperature</h3>
+                    <li>Added option to remove temperature value from the EBT light control.</li>
+					
+		    <h3>Emitter ROI Snap</h3>
+                    <li>Added button to automatically align the emitter ROI to the emitter. We are saying this Is currently in beta and may need refined.</li>
+			
+		    <h3>Visible Snapshot</h3>
+                    <li>Visible camera snapshots were only taken when sending emails, made it so they could be created throughout.</li>
+        
+                    <h3>ROI Data In Flir Tools</h3>
+                    <li>Turned on ROI settings so min, max, avg, hot spot, and cold spot data would show in Flir Tools for snapshots created in ViperVision.</li>
+					
+		    <h3>(Bug) Nonadjustable Full Size ROI</h3>
+                    <li>Fixed an issue which caused an ROIs dimensions to lock if it were full height and/or full width.</li>
+			
+		    <h3>(Bug) Dual Display Arrangement</h3>
+                    <li>Dual camera display not arranging properly with EBT mode off.</li>
+					
+		    <h3>(Bug) EBT Processes Mute Audible</h3>
+                    <li>The toggle switch was not setting properly. Made it so an output does not need to be created to have audible fail</li>
+			
+		    <h3>(Bug) Pan/Tilt Camera Selection</h3>
+                    <li>Fixed issue which prevented a camera from being tied to a specific p/t.</li>
+                </ul>
+            </div>
+	    <div id="3.5.12.21">
+                <div class="align"><i id="i3.21" class="fa fa-plus" onclick="makeLittle('collapse-3.21', 'i3.21')" aria-hidden="true"></i><h2>ViperVision3.5.12.21</h2></div>
+                <ul id="collapse-3.21" class="inactive">
+                    <h3>Manual Reference Temperature</h3>
+                    <li>Can now set a reference temperature for the emitter ROI.</li>
+        
+                    <h3>PIP Thermal And PIP Visible Display Modes</h3>
+                    <li>Can now set the thermal and visible images in "picture-in-picture" mode.</li>
+					
+		    <h3>Delta Feed Analysis</h3>
+                    <li>Can now output the difference between two ROI temperatures.</li>
+			
+		    <h3>(Bug) Settings Not Saving Or Changing After Load</h3>
+                    <li>Fixed issue of EBT eye roi not saving certain settings and some camera settings changing after opening the settings menu.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript">
+		
+		function makeLittle(ul, i) {
+			let collapse = document.getElementById(ul);
+			let operand = document.getElementById(i);
+            if(collapse.style.display === '') {
+                collapse.style.display = 'none';
+            }
+
+			if(collapse.style.display == 'none') {
+				collapse.style.display = 'block';
+				operand.setAttribute('class', 'fa fa-minus');
+			}
+			else {
+				collapse.style.display = 'none';
+				collapse.setAttribute('class', 'inactive');
+				operand.setAttribute('class', 'fa fa-plus');
+			}
+		}
+	</script>
+</body>
+</html>
